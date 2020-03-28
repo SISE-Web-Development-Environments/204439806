@@ -40,6 +40,7 @@
   Love him or hate him, there’s a lot about Dylan’s career that is important and inspirational for songwriters in particular and fans in general- from his transforming song form to the fact that he’s kept writing almost non-stop for <b style="text-decoration: underline">six decades</b> about almost every aspect of life.
   <br/>this affection can maybe be reflected by the unbelievable amount of covers and artists who covered his songs, and of cource by the social and political symbol he became in the 60s.
   <br/>
+  <br/>
   <b style="color: teal; text-decoration: underline;">here's a local fact for you:</b>
   <br/>
   Aviv Geffens' song with his father Yehonatan Geffen "Geshem kaved omed lipol" is translation of Bob Dylans' song "A hard rain's Gonna fall" (1962).
@@ -183,7 +184,7 @@ Q&A
 contact me for more information about Dylan!
   </div>
 <br/>
-<form action ="mailto:inonbenz@post.bgu.ac.il" method="post" enctype="text/plain" align = "center">
+<form id="usrform" action ="mailto:inonbenz@post.bgu.ac.il" method="post" enctype="text/plain" align = "center">
   <p>
     <label for="name">Name:</label>
     <input id="name" name = "name" type="text" size = "25" required="">
@@ -203,7 +204,7 @@ contact me for more information about Dylan!
 
   <p>
     <label id ="desc" name ="desc" for="desc">Comment:</label>
-    <textarea rows="4" cols="50" name="desc"></textarea>
+    <textarea rows="4" cols="50" name="desc" form="usrform"></textarea>
   
   </p>
 
@@ -246,7 +247,7 @@ contact me for more information about Dylan!
         
       for(i = 0; i < ele.length; i++) { 
           if(ele[i].checked) 
-          document.getElementById("desc").value
+          document.getElementById('desc').value
                   += ele[i].value; 
       } 
   } 
