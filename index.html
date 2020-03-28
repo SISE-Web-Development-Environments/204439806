@@ -105,8 +105,7 @@ Dylan playlist
 like for Dylan!
   </div>
 <section style="text-align: center;">
-  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="450" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
-</section>
+  <div class="fb-like" data-href="https://www.facebook.com/bobdylan/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div></section>
     <br/>
 <br/>
 </section>
@@ -203,7 +202,7 @@ contact me for more information about Dylan!
   </p>
 
   <p>
-    <label for="desc">Comment:</label>
+    <label id ="desc" name ="desc" for="desc">Comment:</label>
     <textarea rows="4" cols="50" name="desc"></textarea>
   
   </p>
@@ -219,13 +218,38 @@ contact me for more information about Dylan!
     </p>
    
   </p>
-  <p><span style='font-size:100px;'>&#127928;</span></p>
+
+  <p style="display: inline-block;">
+    choose an emoji:
+    <label for="mic"><span style='font-size:20px;'>&#127908;</span></label>
+    <input id="mic" name = "emoji" type="radio">
+  
+    <label for="guitar"><span style='font-size:20px;'>&#127928;</span></label>
+      <input id="guitar" name = "emoji" type="radio">
+
+      <label for="guitar"><span style='font-size:20px;'>&#127925;</span></label>
+      <input id="guitar" name = "emoji" type="radio">
+   
+  </p>
+  <input type="submit" value="send" onclick="add()">
+  <input type="reset" value="clear">
 
 </form>
 <br/>
 <br/>
 </section>
 
+<script> 
+  function add() { 
+      var ele = document.getElementsByName('emoji'); 
+        
+      for(i = 0; i < ele.length; i++) { 
+          if(ele[i].checked) 
+          document.getElementById("desc").innerHTML
+                  = "emoji: "+ele[i].value; 
+      } 
+  } 
+</script> 
 
 <script type="text/javascript">
 $(function(){
