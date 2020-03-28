@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>
+    Inon Ben Zikri Website
+  </title>
 <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
-<div id="menu">
-<li><a href="#about">About Me</a></li>
-<li><a href="#photos">My Photos</a></li>
-<li><a href="#playlist">My Playlist</a></li>
-<li><a href="#like">Like</a></li>
-<li><a href="#qrcoder">QR code</a></li>
-<li><a href="#spa">Q&A</a></li>
-<li><a href="#contact">Contact Me</a></li>
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v6.0"></script>
+
+<div id="menu" style="background-color: dodgerblue;">
+  <ul>  
+  <li><a href="#about">About Me</a></li>
+  <li><a href="#photos">My Photos</a></li>
+  <li><a href="#playlist">My Playlist</a></li>
+  <li><a href="#like">Like</a></li>
+  <li><a href="#qrcoder">QR code</a></li>
+  <li><a href="#spa">Q&A</a></li>
+  <li><a href="#contact">Contact Me</a></li>
+  </ul>
 </div>
 		  
 <section id="about" class="section">
@@ -20,110 +28,95 @@
 <br/>
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-about me
-<br/>
-<br/>
-<br/>
+<div id="aboutTitle">
+  <h3 style="border: 3px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
+    About
+  </h3>
+</div>
+
+<p style="border: 2px aquamarine;font-size: 150%; font-family: Arial, Helvetica, sans-serif; ">
+
+  <b style="font-size: 200%; font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;" >Bob Dylan</b>, original name Robert Allen Zimmerman, (born May 24, 1941, Duluth, Minnesota, U.S.), American folksinger who moved from folk to rock music in the 1960s, theretofore concerned mostly with boy-girl romantic innuendo, with the intellectualism of classic literature and poetry.<br/> Hailed as the Shakespeare of his generation, Dylan sold tens of millions of albums, wrote more than 500 songs recorded by more than 2,000 artists, performed all over the world, and set the standard for songwriting.<br/> He was awarded the Nobel Prize for Literature in 2016.
+  Love him or hate him, there’s a lot about Dylan’s career that is important and inspirational for songwriters in particular and fans in general- from his transforming song form to the fact that he’s kept writing almost non-stop for <b style="text-decoration: underline">six decades</b> about almost every aspect of life.
+  <br/>this affection can maybe be reflected by the unbelievable amount of covers and artists who covered his songs, and of cource by the social and political symbol he became in the 60s.
+  <br/>
+  <b style="color: teal; text-decoration: underline;">here's a local fact for you:</b>
+  <br/>
+  Aviv Geffens' song with his father Yehonatan Geffen "Geshem kaved omed lipol" is translation of Bob Dylans' song "A hard rain's Gonna fall" (1962).
+</p>
 </section>
 
 <section id="photos" class="section">
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div id="photosTitle">
+  <h3 style="border: 3px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
 my photos
+  </div>
 <br/>
-<br/>
-<br/>
+
+<div class=container>
+
+<img class="image" alt="dylan1" src="dylan1.jpg" width="24.5%" height="400">
+<div class="middle">
+  <div class="text">Dylan in rehearsels</div>
+</div>
+</div>
+
+<div class=container>
+<img class="image" alt="dylan2" src="dylan2.jpg" width="24.5%" height="400">
+<div class="middle">
+  <div class="text">Dylan in the western wall in Israel</div>
+</div>
+</div>
+
+<div class=container>
+
+<img class="image" alt="dylan3" src="dylan3.jpg" width="24.5%" height="400">
+<div class="middle">
+  <div class="text">Dylan with George Harrison from The Beatles</div>
+</div>
+</div>
+
+<div class=container>
+
+<img class="image" alt="dylan4" src="dylan4.jpg" width="24.5%" height="400">
+<div class="middle">
+  <div class="text">Dylan with Johnny Cash</div>
+</div>
+</div>
+</div>
 </section>
 
 <section id="playlist" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-my playlist
-<br/>
-<br/>
+<div id="playlistTitle">
+  <h3 style="border: 2px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
+Dylan playlist
+  </div>
+<p align="center">
+  <iframe title="Dylan playlist" width="560" height="315" src="https://www.youtube.com/embed/T5al0HmR4to" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></p>
 <br/>
 </section>
 
 <section id="like" class="section">
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-give me a like
-<br/>
-<br/>
+<div id="likeTitle">
+  <h3 style="border: 2px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
+like for Dylan!
+  </div>
+<section style="text-align: center;">
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="450" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+</section>
+    <br/>
 <br/>
 </section>
 
 <section id="qrcoder" class="section">
 <br/>
 <br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
+<div id="scanTitle">
+  <h3 style="border: 2px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
 scan my code
+</div>
 <br/>
 <br/>
 <br/>
@@ -146,7 +139,10 @@ scan my code
 <br/>
 <br/>
 <br/>
-ans
+<div id="Q&ATitle">
+  <h3 style="border: 2px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
+Q&A
+  </div>
 <br/>
 <br/>
 <br/>
@@ -169,7 +165,10 @@ ans
 <br/>
 <br/>
 <br/>
+<div id="contactTitle">
+  <h3 style="border: 2px solid lightskyblue; font-style: italic;font-size:200% ;text-align: center;">
 contact me
+  </div>
 <br/>
 <br/>
 <br/>
