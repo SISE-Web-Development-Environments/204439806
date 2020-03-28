@@ -61,7 +61,12 @@
 	padding: 16px 32px;
   }
 
-  .fb-like{
-	  align-content:center;
+  .input{
 
+  }
+  
+  .input:hover{
+	  opacity: 0;
+	margin-right: 200px;
+	margin-bottom: 50;
   }
